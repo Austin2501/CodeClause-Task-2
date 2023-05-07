@@ -1,0 +1,225 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="folio.css"> 
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anony
+    "></script>
+ </head>
+ <body>
+    <!-- HEADER DESIGN -->
+    <div id="header">
+      <div class="container">
+         <nav>
+            <img src="logo.jpg" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#About">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Front-end Developer</p>
+            <h1>Hi, I'm <span>Vineet</span><br>From India</h1>
+         </div>
+      </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <div id="About">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="user.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>Hi, my name is Vineet Rawat, and I'm a C.S.E 3rd year student pursuing B.Tech from ABES Engineering College. 
+                  I'm excited to work as a software engineer, where I can apply my technical skills and passion 
+                  for building high-quality software solutions. 
+                  During my career, I've worked on a variety of projects, from making ML Models to building complex 
+                  web applications. I'm skilled in programming languages such as C/C++, Python, and many more, and I 
+                  have experience working with a range of software development frameworks and tools. 
+                  </p>
+               <div class="tab-titles">
+                  <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div> 
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>C/C++</span></li>
+                     <li><span>Python</span></li>
+                     <li><span>HTML</span></li>
+                     <li><span>CSS</span></li>
+                     <li><span>JavaScript</span></li>
+                     <li><span>Machine Learning</span></li>
+                     
+                  </ul>
+               </div> 
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>Oct 2021 - Dec 2021</span><br>Microsoft Future Ready Talent Virtual Internship Program</li>
+                     <li><span>May 2023 - Present</span><br>CodeClause Web Development Intern</li>
+                  </ul>
+               </div> 
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2020 - Present</span><br>Bachelor's of Technology from ABES Engineering College</li>
+                     <li><span>2018 - 2019</span><br>Intermediate School from KARL HUBER SCHOOL</li>
+                     <li><span>2016 - 2017</span><br>High School from KARL HUBER SCHOOL</li>
+                  </ul>
+               </div> 
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <!-- SERVICES-SECTION -->
+
+    <div id="services">
+      <div class="container">
+         <h1 class="subtitle">My Services</h1>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-crop"></i>
+               <h2>Front-End Design</h2>
+               <p>Front-end design, also known as front-end development, refers to the process of designing and developing the user interface (UI) and user experience (UX) of a website or application. It involves creating the visual and interactive elements that users see and interact with on a website or application, such as buttons, menus, forms, and content layout.</p>
+               <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp"><br>Learn More</a>
+            </div>
+            <div>
+               <i class="fas fa-code"></i>
+               <h2>Python</h2>
+               <p>Python is an object-oriented language, which means that it allows programmers to create and manipulate objects with attributes and methods. It has a large standard library, which includes modules for a wide range of tasks such as web development, data analysis, and machine learning.</p>
+               <a href="https://www.javatpoint.com/python-tutorial"><br>Learn More</a>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO-SECTION -->/
+
+    <div id="portfolio">
+      <div class="container">
+         <h1 class="sub-title">My Projects</h1>
+         <div class="work-list">
+            <div class="work">
+               <img src="simpson.jpg">
+               <div class="layer">
+                  <h3>Which-Simpson-It-IS</h3>
+                  <p>It is a Image Classifier using Azure Services(CUSTOM VISION). 
+                     It's a Simpsons Family Classifier (Cartoon Show) who have 5 Members Bart, 
+                     Homer, Marge, Lisa and Maggie Simpson. Custom Vision used to import dataset, 
+                     train model, publish model and generating api's. </p>
+                  <a href="https://github.com/Austin2501/Which-Simpson-It-Is"><i class="fa-solid fa-link"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="spam.jpg">
+               <div class="layer">
+                  <h3>Spam Detector</h3>
+                  <p>It is a Supervised Machine Learning Model in a 2-person team usingPython.
+                     It's having logistic regression as a classification algorithm, which helps the model to predict the probability
+                     that it belongs to the “spam” class or “ham” class.
+                  </p>
+                  <a href="https://github.com/Austin2501/Spam-Detector"><i class="fa-solid fa-link"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="Social Media App">
+               <div class="layer">
+                  <h3>Social Media App</h3>
+                  <p>Build and deploy a full-stack social media application in a 2-person team.
+                     Implemented email and Google Authentication, pagination, search and filtering capabilities, comments, and
+                     much more to improve user experience.
+                     </p>
+                  <a href="https://github.com/Austin2501/Social-Media-App"><i class="fa-solid fa-link"></i></a>
+               </div>
+            </div>
+         </div>
+         <a href="https://github.com/Austin2501" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- CONTACT-SECTIONS -->
+    <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa-solid fa-envelope"></i>vineetrawat25102@gmail.com</p>
+               <p><i class="fa-solid fa-phone"></i>+91 8851914696</p>
+               <div class="Social-icons">
+                  <a href="https://www.linkedin.com/in/vineet-rawat/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/Austin2501"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               </div>
+               <a href="https://drive.google.com/file/d/1Rvn17qVe5wNSj7x1l5XUc1Pp0Q07kdB4/view?usp=sharing" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+               <form name="https://formsubmit.co/vineetrawat25102@email.com" method="POST" />
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your messsage"></textarea>
+                  <button type="Submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright @Austin. Made by <i class="fa-solid fa-heart"></i> Vineet Rawat</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+         for(tablink of tablinks)
+         {
+            tablink.classList.remove("active-links");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-links");
+         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu=document.getElementById("sidemenu")
+      function openmenu(){
+         sidemenu.style.right = "0";
+      }
+      function closemenu(){
+         sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxgaAHhMjarTR7NB2OHAk5AUbqaO9Xft14F7W3Wi1FnaI8DJfOxFdFXeLCtNN75woFczw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+               msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+ </body>
+ </html>
